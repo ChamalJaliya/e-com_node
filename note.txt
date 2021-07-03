@@ -1,0 +1,99 @@
+Zen Coding
+++++++++++++++++++++++++++
+# creates an id attribute
+. creates a class attribute
+[ ] creates a custom attribute
+> creates a child element
++ creates a sibling element
+^ climbs up
+* is element multiplication. This creates the same thing n number of times
+$ is replaced with an incremental number
+$$ is used for numbers with padding
+{ } creates text in an element
+
+Node
+========================
+Node Js is Js Runtime Env
+Different Version of Js add some extra features
+Allows to run javascript code in the browser
+Uses V8 engine (take js code and compile it to machine code)
+Extra features -> Opening file ,Reading file access local file
+Code runs inside the javascript engine which is Node Js not in the browser
+
+Node Version
+========================
+node -v / node -version
+
+Node REPL
+========================
+Read - Reading user inputs 
+Evaluate - Evaluate
+Print - Print the result
+Loop - Wait for next input
+
+node -> Enter
+>  <-- Node Terminal / REPL eg > 2+2 ( Node on the fly )
+
+Initialization
+========================
+mkdir <projectName>
+cd <projectName>
+npm init --yes
+
+create -> index.js
+run -> node index.js
+
+Node Js Core Module
+========================
+http -> launch a server and send requests
+https -> launch SSL encoded server
+fs -> 
+path
+os
+
+Raw Server without express
+========================
+Ref server.js
+
+Req Body
+========================
+complex object contain ,
+1 -> headers - meta data
+    host - localhost 
+2 -> http version
+3 -> url (after host)
+4 -> method
+
+Res Body
+========================
+We want to define the response,
+1 -> setHeaders ()
+2 -> status ()
+3 -> json ({})
+
+Exporting
+========================
+// module is a keyword
+1 -> module.exports = requestHandler
+2 -> module.exports = {}
+3 -> module.exports.requestHandler = requestHandler
+4 -> exports.requestHandler = requestHandler
+
+Types of Errors
+========================
+1 -> syntax errors - (automatically throws when we run the application)
+eg :- typo , missing or additional extra characters
+2 -> runtime errors - (breaks when it runs)
+3 -> logical errors - (never see the error message)
+
+Express
+========================
+Pure node ,
+Server Logic is complex
+
+3rd Party lib which we can outsource some nitty gritty logic
+Framework which contain helper functions tools and set of rules to do the heavy lifting
+
+Alternatives - Vanilla Node js
+                Adonis Js , Koa , Sails Js
+
